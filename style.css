@@ -1,0 +1,46 @@
+* {
+	box-sizing: border-box;
+}
+
+nav a{
+	padding: 0 20px;
+}
+
+
+header{
+	position: relative;
+
+}
+
+
+.Nav-Wrapper{
+	position: absolute;
+	bottom: 0;
+	background: white;
+	left: 50%;
+	transform: translateX(-50%);
+
+}
+
+.overlay{
+	background-color: rgba(0,0,0,1);
+	overflow:hidden;
+	height: 100%;
+	z-index: 6;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card:hover{
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+
+.card-body{
+	background-color: #528cea;
+}
+
+#Projects-Wrapper{
+	background-color: #d8d8d8;
+}
