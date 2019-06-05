@@ -2,35 +2,88 @@
 	box-sizing: border-box;
 }
 
-nav a{
-	padding: 0 20px;
-}
-
-
-header{
+.wrapper{
 	position: relative;
 
 }
 
-
-.Nav-Wrapper{
+/*Creates a transparent overlay over the header image*/
+.wrapper:before{
+	content: "";
 	position: absolute;
-	bottom: 0;
-	background: white;
-	left: 50%;
-	transform: translateX(-50%);
-
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	background: rgba(0,0,0,0.3);
+	z-index:1;
 }
 
-.overlay{
-	background-color: rgba(0,0,0,1);
-	overflow:hidden;
-	height: 100%;
-	z-index: 6;
+/*header{
+	position: relative;
+}
+
+nav{
+	position: absolute;
+	top: 0;
+	z-index: 3;
+}*/
+
+/*.Nav-Wrapper{
+	position: absolute;
+	bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	z-index: 2;
+}*/
+
+/*.Nav-Wrapper{
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+}*/
+
+/*#topNav{
+	position: sticky;
+	top: 0;
+}*/
+
+/*#topNav{
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+
+}*/
+
+/*#topNav a{
+	padding: 0 20px;
+	color: white;
+}
+
+#topNav a:hover{
+	background-color: white;
+	color: black;
+	text-decoration: none;
+	padding-bottom: 3px;
+	margin-bottom: -1px;
+}
+*/
+#Projects-Wrapper a{
+	text-decoration: none;
+	color: white;
+}
+
+#Projects-Wrapper a img{
+	text-decoration: none;
+	color: black;
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card:hover{
@@ -38,9 +91,9 @@ header{
 }
 
 .card-body{
-	background-color: #528cea;
+	background-color: #7ea4b3;
 }
 
-#Projects-Wrapper{
-	background-color: #d8d8d8;
+#Projects-Wrapper, #Contact-Wrapper{
+	background-color: #dee8eb;
 }
