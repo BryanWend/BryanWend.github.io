@@ -17,29 +17,29 @@
 				<div class="overview-text">
 					<h1>Welcome!</h1>
 					<h1>I am Bryan Wendlandt</h1>
-					<p>An Undergraduate student, studying Computer Information Systems and Finance at Arizona State University</p>					
+					<p class="d-none d-sm-block">An Undergraduate student, studying Computer Information Systems and Finance at Arizona State University</p>					
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<nav class="navbar navbar-custom navbar-expand-md navbar-light sticky-top row text-nowrap" style="background-color: #dee8eb;">
-		<a class="navbar-brand" href="#">Bryan Wendlandt</a>
+		<a class="navbar-brand pl-3" href="#">Bryan Wendlandt</a>
 
-		<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 			<div class="navbar-nav">
 				<a class="nav-link px-3" href="#">About</a>
 				<a class="nav-link px-3" href="#">Projects</a>
-				<a class="nav-link px-3" href="#">Resume</a>
+				<a class="nav-link px-3" href="#">Résumé</a>
 				<a class="nav-link px-3" href="#">Contact</a>
 			</div>
 		</div>
 	</nav>
 
-	<div id="aboutWrapper" class="mb-3">	
+	<div id="aboutWrapper" class="pl-2 mb-3 py-4">	
 		<div class="container py-3">
 			<div class="row">
 				<h2>About</h2>
@@ -54,7 +54,7 @@
 					Fermentum leo vel orci porta non pulvinar neque laoreet suspendisse. Non sodales neque sodales ut etiam sit amet nisl. Mollis aliquam ut porttitor leo a diam sollicitudin. Morbi tristique senectus et netus et malesuada fames ac.  Arcu dui vivamus arcu felis bibendum ut tristique et. Egestas egestas fringilla phasellus faucibus. Eleifend donec pretium vulputate sapien nec sagittis. Netus et malesuada fames ac
 					</p>
 					<div class="about-links py-3">
-						<a id="resumeDownloadLink" class="px-4 py-3 mr-3" href="#">Resume Download</a>
+						<a id="resumeDownloadLink" class="px-4 py-3 mr-3" href="#">Résumé Download</a>
 						<a id="githubProfileLink" class="px-4 py-3" href="#">GitHub Profile</a>						
 					</div>
 				</div>
@@ -62,9 +62,11 @@
 		</div>		
 	</div>
 
-	<div id="projectsWrapper">		
+	<div id="projectsWrapper" class="pl-2 py-4">		
 		<div class="container py-3">
-			<div class="row"><h2>Projects</h2></div>
+			<div class="row">
+				<h2>Projects</h2>
+			</div>
 			<div class="row">
 				<div class="mb-3 col-md-4 col-sm-12">
 					<a href="#">
@@ -122,15 +124,95 @@
 		</div>
 	</div>
 
-	<div id="resumeWrapper">
+	<div id="resumeWrapper" class="pl-2 py-4">
 		<div class="container py-3">
 			<div class="row">
-				<h2>Resume</h2>
+				<h2>Résumé</h2>
 			</div>
+			<div class="row">
+				<div class="col-md-5 col-sm-12 d-none d-md-block">
+					<h4>Education</h4>
+				</div>
+				<div class="col d-none d-md-block">
+					<h4>Experience</h4>
+				</div>
+			</div>
+			<div class="row mt-3">
+				<div class="col-sm-12 pl-1 d-block d-md-none">
+					<h4>Education</h4>
+				</div>
+				<!-- ASU Image file				 -->
+				<div class="col-md-2 col-sm-12">
+					<img class="img-fluid" src="asulogo.png">
+				</div>
+				<!-- ASU degrees and gpa info -->
+				<div class="col-md-3 col-sm-12">
+					<ul>
+						<li>Aug 2016 - Dec 2019</li>
+						<li><strong>W.P. Carey School of Business</strong></li>		
+						<li class="asu-color py-1">Bachelor of Computer Information Systems</li>
+						<li class="asu-color py-1">Bachelor of Finance</li>
+						<li class="asu-color py-1">GPA: 3.96</li>
+					</ul>
+				</div>
+				<div class="col py-4 pl-1 d-block d-md-none">
+					<h4>Experience</h4>
+				</div>
+				<!-- Intel Image file				 -->
+				<div class="col-md-2 col-sm-12 py-4" style="border-left: 4px double rgba(0,0,0,.5);">
+					<img class="img-fluid" src="intellogo.png">
+				</div>
+				<!-- Intel Project Info -->
+				<div class="col-md-5 col-sm-12">
+					<ul>
+						<li>Feb 2019 - Present</li>
+						<li><strong>Internet of Things Strategy Intern</strong></li>
+						<li class="intel-color py-1">Really cool project example one</li>
+						<li class="intel-color py-1">Really cool project example two. I really like going into depth</li>
+						<li class="intel-color py-1">Really cool project example three. Making sure to include all the information</li>
+					</ul>
+				</div>
+			</div>
+			<br>
+			<div class="row mt-3">
+				<div class="col"></div>
+				<!-- JDA Image file -->
+				<div class="col-md-2 col-sm-12 py-4" style="border-left: 4px double rgba(0,0,0,.5);">
+					<img class="img-fluid" src="jdalogo.png">
+				</div>
+				<!-- JDA Project info -->
+				<div class="col-md-5 col-sm-12">
+					<ul>
+						<li>May 2018 - Jan 2019</li>
+						<li><strong>Sales Operations Intern</strong></li>
+						<li class="jda-color py-1">Really cool project example one</li>
+						<li class="jda-color py-1">Really cool project example two. I really like going in to depth</li>
+						<li class="jda-color py-1">Really cool project example three. Making sure to include all the information</li>
+					</ul>
+				</div>
+			</div>
+			<br>
+			<div class="row mt-3">
+				<div class="col"></div>
+				<!-- BBY Image file -->
+				<div class="col-md-2 col-sm-12 py-4" style="border-left: 4px double rgba(0,0,0,.5);">
+					<img class="img-fluid" src="bbylogo.png">
+				</div>
+				<!-- Best Buy and Apple Project info -->
+				<div class="col-md-5 col-sm-12">
+					<ul>
+						<li>Nov 2015 - Aug 2018</li>
+						<li><strong>Apple Master</strong></li>
+						<li class="bby-color py-1">Really cool project example one</li>
+						<li class="bby-color py-1">Really cool project example two. I really like going in to depth</li>
+						<li class="bby-color py-1">Really cool project example three. Making sure to include all the information</li>
+					</ul>
+				</div>
+			</div>			
 		</div>
 	</div>
 
-	<div id="skillsWrapper">
+	<div id="skillsWrapper" class="pl-2 py-4">
 		<div class="container py-3">
 			<div class="row">
 				<h2>Skills</h2>
@@ -138,11 +220,32 @@
 		</div>
 	</div>
 
-	<div id="contactWrapper">
+	<div id="contactWrapper" class="pl-2 py-4">
 		<div class="container">
 			<div class="row">
 				<h2>Contact Me</h2>
 			</div>
+			<form>
+				<div class="form-group">
+					<label for="nameInput">Name</label>
+					<input type="text" class="form-control" id="nameInput" required>
+				</div>
+				<div class="form-group">
+					<label for="emailInput">Email Address</label>
+					<input type="email" class="form-control" id="emailInput" required>
+				</div>
+				<div class="form-group">
+					<label for="subjInput">Subject</label>					
+					<input type="text" class="form-control" id="subjInput" required>
+				</div>
+				<div class="form-group">
+					<label for="messageInput">Message</label>					
+					<textarea class="form-control" id="messageInput" rows="3" required></textarea>
+				</div>
+				<div class="form-group">
+					<button type="submit" class="py-1 px-4" id="sendBtn">Send</button>
+				</div>
+			</form>						
 		</div>
 	</div>
 
