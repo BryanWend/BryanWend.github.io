@@ -71,9 +71,10 @@ a.navbar-brand:hover{
 	text-decoration: 	none;
 }
 
-#resumeDownloadLink{
+#resumeDownloadLink, #sendBtn{
 	background-color: 	#7ea4b3;
-	color: 				white;	
+	color: 				white;
+	border:				none;	
 }
 
 #githubProfileLink{
@@ -162,9 +163,6 @@ a.navbar-brand:hover{
 
 
 /*---END SKILLS-----------------------------*/
-
-
-
 
 
 /*---END CONTACT-----------------------------*/

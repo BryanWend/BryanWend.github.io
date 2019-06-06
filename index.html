@@ -26,7 +26,7 @@
 	<nav class="navbar navbar-custom navbar-expand-md navbar-light sticky-top row text-nowrap" style="background-color: #dee8eb;">
 		<a class="navbar-brand pl-3" href="#">Bryan Wendlandt</a>
 
-		<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -39,7 +39,7 @@
 		</div>
 	</nav>
 
-	<div id="aboutWrapper" class="pl-2 mb-3">	
+	<div id="aboutWrapper" class="pl-2 mb-3 py-4">	
 		<div class="container py-3">
 			<div class="row">
 				<h2>About</h2>
@@ -62,7 +62,7 @@
 		</div>		
 	</div>
 
-	<div id="projectsWrapper" class="pl-2">		
+	<div id="projectsWrapper" class="pl-2 py-4">		
 		<div class="container py-3">
 			<div class="row">
 				<h2>Projects</h2>
@@ -124,7 +124,7 @@
 		</div>
 	</div>
 
-	<div id="resumeWrapper" class="pl-2">
+	<div id="resumeWrapper" class="pl-2 py-4">
 		<div class="container py-3">
 			<div class="row">
 				<h2>Résumé</h2>
@@ -180,7 +180,7 @@
 				<div class="col-md-2 col-sm-12 py-4" style="border-left: 4px double rgba(0,0,0,.5);">
 					<img class="img-fluid" src="jdalogo.png">
 				</div>
-
+				<!-- JDA Project info -->
 				<div class="col-md-5 col-sm-12">
 					<ul>
 						<li>May 2018 - Jan 2019</li>
@@ -191,13 +191,14 @@
 					</ul>
 				</div>
 			</div>
+			<br>
 			<div class="row mt-3">
 				<div class="col"></div>
-				<!-- JDA Image file -->
+				<!-- BBY Image file -->
 				<div class="col-md-2 col-sm-12 py-4" style="border-left: 4px double rgba(0,0,0,.5);">
 					<img class="img-fluid" src="bbylogo.png">
 				</div>
-
+				<!-- Best Buy and Apple Project info -->
 				<div class="col-md-5 col-sm-12">
 					<ul>
 						<li>Nov 2015 - Aug 2018</li>
@@ -211,7 +212,7 @@
 		</div>
 	</div>
 
-	<div id="skillsWrapper" class="pl-2">
+	<div id="skillsWrapper" class="pl-2 py-4">
 		<div class="container py-3">
 			<div class="row">
 				<h2>Skills</h2>
@@ -219,11 +220,32 @@
 		</div>
 	</div>
 
-	<div id="contactWrapper" class="pl-2">
+	<div id="contactWrapper" class="pl-2 py-4">
 		<div class="container">
 			<div class="row">
 				<h2>Contact Me</h2>
 			</div>
+			<form>
+				<div class="form-group">
+					<label for="nameInput">Name</label>
+					<input type="text" class="form-control" id="nameInput" required>
+				</div>
+				<div class="form-group">
+					<label for="emailInput">Email Address</label>
+					<input type="email" class="form-control" id="emailInput" required>
+				</div>
+				<div class="form-group">
+					<label for="subjInput">Subject</label>					
+					<input type="text" class="form-control" id="subjInput" required>
+				</div>
+				<div class="form-group">
+					<label for="messageInput">Message</label>					
+					<textarea class="form-control" id="messageInput" rows="3" required></textarea>
+				</div>
+				<div class="form-group">
+					<button type="submit" class="py-1 px-4" id="sendBtn">Send</button>
+				</div>
+			</form>						
 		</div>
 	</div>
 
