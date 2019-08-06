@@ -39,17 +39,25 @@ ul{
 	padding: 			0;
 }
 
+nav{
+	border-bottom: 4px double rgba(0,0,0,.5);
+}
+
 nav a{
 /*	background-color: white;
 	color: black;
 	text-decoration: none;*/
-	padding-bottom: 	10px;
-	margin-bottom: 		-10px;
+	padding-bottom: 	15px;
+	margin-bottom: 		-15px;
 }
 
 nav a:hover{
 	background-color: 	white;
 	color: 				black;
+	border-bottom: none;
+	border-top: 4px double rgba(0,0,0,.5);
+	border-left: 4px double rgba(0,0,0,.5);
+	border-right: 4px double rgba(0,0,0,.5);
 }
 
 a.navbar-brand{
@@ -60,6 +68,7 @@ a.navbar-brand{
 
 a.navbar-brand:hover{
 	background-color: 	#dee8eb;
+	border: none;
 }
 
 
@@ -158,8 +167,54 @@ a.navbar-brand:hover{
 /*---END RESUME-----------------------------*/
 
 
+.arrow{
+      width: 5em;
+      height: 2em;
+/*      top: 20px;
+      left: -1em;*/
+      background: #c2f9ae;
+      position: relative;
+      /*text-align: center;	*/
+		padding-left: 1em;
+}
 
+.arrowBody{
+      width: 5em;
+      height: 2em;
+/*      top: 20px;
+      left: -1em;*/
+      background: #c2f9ae;
+      position: relative;
+      /*text-align: center;	*/
+      padding-left: 1em;
+      
+}
 
+/*Try nesting a div within arrowBody that has the tip, then adjust widths/heights*/
+.arrow:before{
+      width: 0;
+      height: 0;
+      border-top: 1.5em solid transparent;
+      border-left: 3em solid #c2f9ae;
+      border-bottom: 1.5em solid transparent;
+      top: -.5em;
+      left: 5em;
+      position: absolute;
+      content:"";
+      /*z-index: 6;*/
+}
+
+#skillsWrapper .arrowBody:first-child{
+	z-index: 6;
+}
+
+#skillsWrapper p{
+	margin: 0;
+}
+
+.timeLearned p{
+	padding-left: 3.5em;
+}
 
 
 /*---END SKILLS-----------------------------*/
