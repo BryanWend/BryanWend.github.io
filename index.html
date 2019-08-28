@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
     <title>Bryan Wendlandt</title>
 </head>
 
@@ -31,17 +33,17 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 			<div class="navbar-nav">
-				<a class="nav-link px-3" href="#">About</a>
-				<a class="nav-link px-3" href="#">Projects</a>
-				<a class="nav-link px-3" href="#">Résumé</a>
-				<a class="nav-link px-3" href="#">Contact</a>
+				<a class="nav-link px-3" href="#aboutWrapper">About</a>
+				<a class="nav-link px-3" href="#projectsWrapper">Projects</a>
+				<a class="nav-link px-3" href="#resumeWrapper">Résumé</a>
+				<a class="nav-link px-3" href="#contactWrapper">Contact</a>
 			</div>
 		</div>
 	</nav>
 
 	<div id="aboutWrapper" class="pl-2 mb-3 py-4">	
 		<div class="container py-3">
-			<div class="row">
+			<div class="row pb-2">
 				<h2>About</h2>
 			</div>
 			<div class="row">
@@ -53,6 +55,10 @@
 					<br><br>
 					Fermentum leo vel orci porta non pulvinar neque laoreet suspendisse. Non sodales neque sodales ut etiam sit amet nisl. Mollis aliquam ut porttitor leo a diam sollicitudin. Morbi tristique senectus et netus et malesuada fames ac.  Arcu dui vivamus arcu felis bibendum ut tristique et. Egestas egestas fringilla phasellus faucibus. Eleifend donec pretium vulputate sapien nec sagittis. Netus et malesuada fames ac
 					</p>
+					<!-- <p>
+					<br><br>
+					
+					</p> -->
 					<div class="about-links py-3">
 						<a id="resumeDownloadLink" class="px-4 py-3 mr-3" href="#">Résumé Download</a>
 						<a id="githubProfileLink" class="px-4 py-3" href="#">GitHub Profile</a>						
@@ -64,7 +70,7 @@
 
 	<div id="projectsWrapper" class="pl-2 py-4">		
 		<div class="container py-3">
-			<div class="row">
+			<div class="row pb-2">
 				<h2>Projects</h2>
 			</div>
 			<div class="row">
@@ -73,7 +79,8 @@
 						<div class="card border-0">
 							<img class="card-img-top" src="#" alt="Card image cap">
 							<div class="card-body">
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<h5><u>Utilization Analysis</u></h5>
+								<p class="card-text">With Node.js, compile data from fleets of machines into MongoDB. Using D3.js, generate a series of statistics showcasing the value of a specific technology.</p>
 							</div>
 						</div>
 					</a>
@@ -83,7 +90,8 @@
 						<div class="card border-0">
 							<img class="card-img-top" src="#" alt="Card image cap">
 							<div class="card-body">
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<h5><u>Heatmap Analysis</u></h5>
+								<p class="card-text">Using input from a Salesforce report, render a plotted map of sales accounts relative to their revenue generated and respective sales staff using HTML, CSS, and Javascript.</p>
 							</div>
 						</div>
 					</a>
@@ -93,7 +101,8 @@
 						<div class="card border-0">
 							<img class="card-img-top" src="#" alt="Card image cap">
 							<div class="card-body">
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<h5><u>Mapping Tool</u></h5>				
+								<p class="card-text">Plot shapes on a graph using Fabric.js. The tool currently provides an easy way to plan out specific item placements within a confined space. </p>
 							</div>
 						</div>
 					</a>
@@ -105,7 +114,8 @@
 						<div class="card border-0">
 							<img class="card-img-top" src="#" alt="Card image cap">
 							<div class="card-body">
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<h5><u>Fun Fact Quiz</u></h5>
+								<p class="card-text">*School Project* C# WFA based quiz that tests your knowledge of the Harry Potter films!  Randomized questions, score-tracking and more.</p>
 							</div>
 						</div>
 					</a>
@@ -115,7 +125,8 @@
 						<div class="card border-0">
 							<img class="card-img-top" src="#" alt="Card image cap">
 							<div class="card-body">
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<h5><u>Account Management Tool</u></h5>
+								<p class="card-text">To streamline the data entry process, these created Excel VBA Forms make searching, adding, and creating data quicker and easier for tracking progress.</p>
 							</div>
 						</div>
 					</a>
@@ -126,7 +137,7 @@
 
 	<div id="resumeWrapper" class="pl-2 py-4">
 		<div class="container py-3">
-			<div class="row">
+			<div class="row pb-2">
 				<h2>Résumé</h2>
 			</div>
 			<div class="row">
@@ -142,11 +153,11 @@
 					<h4>Education</h4>
 				</div>
 				<!-- ASU Image file				 -->
-				<div class="col-md-2 col-sm-12">
+				<div class="col-md-2 col-sm-12 py-4">
 					<img class="img-fluid" src=".\images\company\asulogo.png">
 				</div>
 				<!-- ASU degrees and gpa info -->
-				<div class="col-md-3 col-sm-12">
+				<div class="col-md-3 col-sm-12 py-4">
 					<ul>
 						<li>Aug 2016 - Dec 2019</li>
 						<li><strong>W.P. Carey School of Business</strong></li>		
@@ -214,8 +225,50 @@
 
 	<div id="skillsWrapper" class="pl-2 py-4">
 		<div class="container py-3">
-			<div class="row">
+			<div class="row pb-2">
 				<h2>Skills</h2>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 col-md-12" style="border-left: 4px double rgba(0,0,0,.5)">
+					<div class="row pt-4 align-items-center">
+						<div class="arrowBody"><span class="align-middle">C#</span></div>
+						<div class="arrowBody"></div>
+						<div class="arrowBody"></div>
+						<div class="arrow"></div>
+						<div class="timeLearned"><p>2 Years</p></div>
+					</div>
+					<div class="row pt-4 align-items-center">
+						<div class="arrowBody"><span class="align-middle">SQL</span></div>
+						<div class="arrowBody"></div>
+						<div class="arrowBody"></div>
+						<div class="arrow"></div>
+						<div class="timeLearned"><p>2 Years</p></div>
+					</div>
+					<div class="row pt-4 align-items-center">
+						<div class="arrowBody"><span class="align-middle">Javascript</span></div>
+						<div class="arrowBody"></div>
+						<div class="arrow"></div>
+						<div class="timeLearned"><p>1.5 Years</p></div>			
+					</div>
+					<div class="row pt-4 align-items-center">
+						<div class="arrowBody"><span class="align-middle">HTML5/CSS</span></div>
+						<div class="arrowBody"></div>
+						<div class="arrow"></div>
+						<div class="timeLearned"><p>1.5 Years</p></div>
+					</div>
+					<div class="row pt-4 align-items-center">
+						<div class="arrowBody"><span class="align-middle">NodeJS</span></div>
+						<div class="arrow"></div>
+						<div class="timeLearned"><p>1 Year</p></div>
+					</div>
+					<div class="row pt-4 align-items-center">
+						<div class="arrow arrow-learn"><span class="align-middle">VBA</span></div>
+						<div class="timeLearned"><p>6 Months</p></div>
+					</div>
+				</div>
+				<div class="col pt-2 d-none d-lg-block">
+					<img class="img-fluid" src=".\images\company\toolsLogos.png">
+				</div>
 			</div>
 		</div>
 	</div>
@@ -226,25 +279,26 @@
 				<h2>Contact Me</h2>
 			</div>
 			<hr style="border-top: 4px double rgba(0,0,0,.5);">
-			<form>
+			<form method="POST" id="contactForm">
 				<div class="form-group">
-					<label for="nameInput">Name</label>
-					<input type="text" class="form-control" id="nameInput" required>
+					<label for="name">Name</label>
+					<input type="text" class="form-control" id="name" name="name" required>
 				</div>
 				<div class="form-group">
-					<label for="emailInput">Email Address</label>
-					<input type="email" class="form-control" id="emailInput" required>
+					<label for="email">Email Address</label>
+					<input type="email" class="form-control" id="email" name="email" required>
 				</div>
 				<div class="form-group">
-					<label for="subjInput">Subject</label>					
-					<input type="text" class="form-control" id="subjInput" required>
+					<label for="subject">Subject</label>					
+					<input type="text" class="form-control" id="subject" name="subject" required>
 				</div>
 				<div class="form-group">
-					<label for="messageInput">Message</label>					
-					<textarea class="form-control" id="messageInput" rows="3" required></textarea>
+					<label for="body">Message</label>					
+					<textarea class="form-control" id="body" rows="4" name="body" required></textarea>
 				</div>
 				<div class="form-group">
-					<button type="submit" class="py-1 px-4" id="sendBtn">Send</button>
+					<!-- <a class="py-2 px-4" id="sendBtn">Send</a> -->
+					<input type="submit" name="Send" id="sendBtn" class="py-2 px-4">
 				</div>
 			</form>						
 		</div>
