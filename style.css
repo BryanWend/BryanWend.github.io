@@ -19,7 +19,7 @@ h2{
 	left:				0;
 	height:				100%;
 	width:				100%;
-	background: 		rgba(0,0,0,0.5);
+	background: 		rgba(0,0,0,0.4);
 	z-index:			1;
 }
 
@@ -40,7 +40,7 @@ ul{
 }
 
 nav{
-	border-bottom: 4px double rgba(0,0,0,.5);
+	border-bottom: 		4px double rgba(0,0,0,.5);
 }
 
 nav a{
@@ -54,10 +54,10 @@ nav a{
 nav a:hover{
 	background-color: 	white;
 	color: 				black;
-	border-bottom: none;
-	border-top: 4px double rgba(0,0,0,.5);
-	border-left: 4px double rgba(0,0,0,.5);
-	border-right: 4px double rgba(0,0,0,.5);
+	border-bottom: 		none;
+	border-top: 		4px double rgba(0,0,0,.5);
+	border-left: 		4px double rgba(0,0,0,.5);
+	border-right: 		4px double rgba(0,0,0,.5);
 }
 
 a.navbar-brand{
@@ -115,8 +115,19 @@ a.navbar-brand:hover{
 	background-color: 	#7ea4b3;
 }
 
-#projectsWrapper, #contactWrapper{
+#projectsWrapper, #connectWrapper, #contactWrapper{
 	background-color: 	#dee8eb;
+}
+
+#connectLink{
+	text-decoration: 	none;
+	color: 				#444444;
+}
+
+#connectWrapper:hover{
+	background-color: 	#7ea4b3;
+	color: 				white;
+	box-shadow: 		0 8px 16px 0 rgba(0,0,0,0.5);
 }
 
 /*---END PROJECTS----------------------------------*/
@@ -168,54 +179,53 @@ a.navbar-brand:hover{
 
 
 .arrow{
-      width: 5em;
-      height: 2em;
+    width: 				5em;
+    height: 			2em;
 /*      top: 20px;
       left: -1em;*/
-      background: #c2f9ae;
-      position: relative;
+    background: 		#c2f9ae;
+    position: 			relative;
       /*text-align: center;	*/
-		padding-left: 1em;
+	padding-left: 		1em;
 }
 
 .arrowBody{
-/*      width: 5em;
-      height: 2em;*/
-      width: 15%;
-      height: 2em;
-/*      top: 20px;
-      left: -1em;*/
-      background: #c2f9ae;
-      position: relative;
-      /*text-align: center;	*/
-      padding-left: 1em;
+/*    width: 5em;
+    height: 2em;*/
+    width: 				15%;
+    height: 			2em;
+/*    top: 20px;
+    left: -1em;*/
+    background: 		#c2f9ae;
+    position: 			relative;
+    /*text-align: center;	*/
+    padding-left: 		1em;
       
 }
 
-/*Try nesting a div within arrowBody that has the tip, then adjust widths/heights*/
 .arrow:before{
-      width: 0;
-      height: 0;
-      border-top: 1.5em solid transparent;
-      border-left: 3em solid #c2f9ae;
-      border-bottom: 1.5em solid transparent;
-      top: -.5em;
-      left: 5em;
-      position: absolute;
-      content:"";
-      /*z-index: 6;*/
+    width: 				0;
+    height: 			0;
+    border-top: 		1.5em solid transparent;
+    border-left: 		3em solid #c2f9ae;
+    border-bottom: 		1.5em solid transparent;
+    top: 				-.5em;
+    left: 				5em;
+    position: 			absolute;
+    content:			"";
+    /*z-index: 6;*/
 }
 
 #skillsWrapper .arrowBody:first-child{
-	z-index: 6;
+	z-index: 			6;
 }
 
 #skillsWrapper p{
-	margin: 0;
+	margin: 			0;
 }
 
 .timeLearned p{
-	padding-left: 3.5em;
+	padding-left: 		3.5em;
 }
 
 
@@ -230,7 +240,7 @@ input:invalid,textarea:invalid{
 /*---END CONTACT-----------------------------*/
 
 #footer{
-	background-color: #444444;
-	color: rgba(255,255,255,.7);
+	background-color: 	#444444;
+	color: 				rgba(255,255,255,.7);
 }
 -
