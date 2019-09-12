@@ -1,6 +1,9 @@
 * {
 	box-sizing: 		border-box;
+}
 
+html, body{
+	overflow-x: hidden;
 }
 
 h2{
@@ -80,10 +83,14 @@ a.navbar-brand:hover{
 	text-decoration: 	none;
 }
 
+#about-links{
+	/*max-width: 100%;*/
+}
+
 #resumeDownloadLink, #sendBtn{
 	background-color: 	#7ea4b3;
 	color: 				white;
-	border:				none;	
+	border:				none;
 }
 
 #githubProfileLink{
