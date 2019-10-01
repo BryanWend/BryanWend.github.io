@@ -9,6 +9,6 @@ Find out who I am, what I've done, and what I plan to do: https://bryanwend.gith
 - [ ] Meta properties
 
 ## Small Future Changes
-- [ ] Heatmap Image
-- [ ] Resume Download
+- [x] Heatmap Image
+- [x] Resume Download
 - [ ] Resume/Github buttons on mobile formatting
